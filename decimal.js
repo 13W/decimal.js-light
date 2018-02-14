@@ -464,6 +464,13 @@
     return z && e > sd ? e : sd;
   };
 
+  P.round = function (y) {
+    var x = this,
+      Ctor = x.constructor;
+
+    y = y || 8;
+    return round(new Ctor(x), y, Ctor.rounding)
+  };
 
   /*
    * Return a new Decimal whose value is the square root of this Decimal, truncated to `precision`

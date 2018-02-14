@@ -1,3 +1,7 @@
+#### 2.3.2
+* 14.02.2018
+* Add round method
+
 #### 2.3.1
 * 13/11/2017
 * Add constructor properties to typings.

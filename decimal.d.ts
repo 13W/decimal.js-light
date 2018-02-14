@@ -299,6 +299,13 @@ export declare class Decimal {
     precision(zeros: boolean|number): number;
 
     /**
+     * Round `x` to `sd` significant digits, using rounding mode `rm` if present (truncate otherwise).
+     *
+     * @param {number} y
+     * @returns {Decimal}
+     */
+    round(y: number): Decimal;
+    /**
      * Return the number of significant digits of the value of this Decimal.
      *
      * @param zeros {boolean|number} Whether to count integer-part trailing zeros: true, false, 1 or 0.
